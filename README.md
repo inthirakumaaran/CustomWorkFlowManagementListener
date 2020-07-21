@@ -1,6 +1,8 @@
-Please follow the following instructions to deploy the extension.
-
+###About
 This extension is implemented to send emails to the users in the roles assigned or selected users in a workflow to approve user account creations, including the self-registered users in the identity dashboard. 
+
+### Try
+Please follow the following instructions to deploy the extension.
 
 1. To enable self registration feature follow steps mentioned in the following documentation.
     `https://is.docs.wso2.com/en/latest/learn/self-registration/`
