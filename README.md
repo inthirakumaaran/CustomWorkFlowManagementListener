@@ -1,33 +1,21 @@
 ### About
 This extension is implemented to send emails to the users in the roles assigned or selected users in a workflow to approve user account creations, including the self-registered users in the identity dashboard. 
 
-### Try
-Please follow the following instructions to deploy the extension.
-
-1. To enable self registration feature follow steps mentioned in the following documentation.
-    `https://is.docs.wso2.com/en/latest/learn/self-registration/`
-
-2. Once this is done, perform the steps outlined in the following document to create a workflow as required.
-
-	`https://is.docs.wso2.com/en/latest/learn/adding-a-new-workflow-definition/`
-
-3. Next perform the steps outlined in the following document to engage a workflow in an operation.
-
-	`https://is.docs.wso2.com/en/latest/learn/engaging-a-workflow-in-an-operation/`
-
-4. The directory that this README file contains is the CustomWorkFlowManagementListener and it contains the service component source for a workflow execution manage listener. You can build it by issuing the following command while on this directory. (There's an already built jar in the target directory)
+### Setup custom workflow managementListener
+1. Build the component by executing following command in the root directory
 
 	`$ mvn clean install`
 
-5. Once successfully built, copy the org.wso2.carbon.identity.custom.workflow.mgt.listener-1.0.0.jar file into [IS_HOME]/repository/components/dropins/ directory. 
+2. Once successfully built, copy the org.wso2.carbon.identity.custom.workflow.mgt.listener-1.0.0.jar (from target) into following directory
+    `[IS_HOME]/repository/components/dropins` 
 
-6. You also need to create an email template to send an email to relevant users. Please follow the following document create an email template type and an email template.
+3. You also need to create an email template to send an email to relevant users. Please follow the following document create an email template type and an email template.
    `https://is.docs.wso2.com/en/latest/learn/customizing-automated-emails`
    
    **Note:** email template type name should be **AccountApproval** as this is what the extension looks for. 
    A sample template is as shown below.
     
-     * Select Email Template Type: **"AccountApproval"**
+     * Select Email Template Type: "**AccountApproval**"
      * Select the Template Language: "English (United States)"
      * Subject: "WSO2 Carbon - PENDING account approval"
      * Email Body:
@@ -93,4 +81,19 @@ Please follow the following instructions to deploy the extension.
                 </tr>
            </table>`
 
-            
+### Try with self- registration scenario
+
+Please follow the following instructions test the extension.
+
+1. Complete the steps mentioned in **Setup custom workflow managementListener section**
+
+2. To enable self registration feature follow steps mentioned in the following documentation.
+    `https://is.docs.wso2.com/en/latest/learn/self-registration/`
+
+3. Once this is done, perform the steps outlined in the following document to create a workflow as required.
+
+	`https://is.docs.wso2.com/en/latest/learn/adding-a-new-workflow-definition/`
+
+4. Next perform the steps outlined in the following document to engage a workflow in an operation.
+
+	`https://is.docs.wso2.com/en/latest/learn/engaging-a-workflow-in-an-operation/`
