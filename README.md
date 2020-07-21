@@ -30,8 +30,9 @@ Please follow the following instructions to deploy the extension.
      * Select Email Template Type: **"AccountApproval"**
      * Select the Template Language: "English (United States)"
      * Subject: "WSO2 Carbon - PENDING account approval"
-     * Email Body: 
-             <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%"bgcolor="#f0f0f0">
+     * Email Body:
+      
+          <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%"bgcolor="#f0f0f0">
                 <tr>
                    <td style="padding: 30px 30px 20px 30px;">
                       <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff" style="max-width: 650px; margin: auto;">
@@ -90,6 +91,6 @@ Please follow the following instructions to deploy the extension.
                       </table>
                    </td>
                 </tr>
-             </table>
+           </table>`
 
             
