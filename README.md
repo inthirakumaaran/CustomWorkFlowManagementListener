@@ -1,4 +1,4 @@
-###About
+### About
 This extension is implemented to send emails to the users in the roles assigned or selected users in a workflow to approve user account creations, including the self-registered users in the identity dashboard. 
 
 ### Try
