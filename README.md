@@ -9,8 +9,8 @@ This extension is implemented to send emails to the users in the roles assigned 
 2. Once successfully built, copy the org.wso2.carbon.identity.custom.workflow.mgt.listener-1.0.0.jar (from target) into following directory
     `[IS_HOME]/repository/components/dropins` 
 
-3. You also need to create an email template to send an email to relevant users. Please follow the following document create an email template type and an email template.
-   `https://is.docs.wso2.com/en/latest/learn/customizing-automated-emails`
+3. You also need to create an email template to send an email to relevant users. Please follow the following [document](https://is.docs.wso2.com/en/latest/learn/customizing-automated-emails) create an email template type and an email template.
+   
    
    **Note:** email template type name should be **AccountApproval** as this is what the extension looks for. 
    A sample template is as shown below.
@@ -85,15 +85,10 @@ This extension is implemented to send emails to the users in the roles assigned 
 
 Please follow the following instructions test the extension.
 
-1. Complete the steps mentioned in **Setup custom workflow managementListener section**
+1. Complete the steps mentioned in [**Setup custom workflow managementListener section**](#setup-custom-workflow-managementlistener)
 
-2. To enable self registration feature follow steps mentioned in the following documentation.
-    `https://is.docs.wso2.com/en/latest/learn/self-registration/`
+2. To enable self registration feature follow steps mentioned in the following [documentation](https://is.docs.wso2.com/en/latest/learn/self-registration/).
 
-3. Once this is done, perform the steps outlined in the following document to create a workflow as required.
-
-	`https://is.docs.wso2.com/en/latest/learn/adding-a-new-workflow-definition/`
-
-4. Next perform the steps outlined in the following document to engage a workflow in an operation.
-
-	`https://is.docs.wso2.com/en/latest/learn/engaging-a-workflow-in-an-operation/`
+3. Once this is done, perform the steps outlined in the following [document](https://is.docs.wso2.com/en/latest/learn/adding-a-new-workflow-definition/) to create a workflow as required.
+	
+4. Next perform the steps outlined in the following [document](https://is.docs.wso2.com/en/latest/learn/engaging-a-workflow-in-an-operation/) to engage a workflow in an operation.
